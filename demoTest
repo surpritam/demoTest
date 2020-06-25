@@ -1,0 +1,16 @@
+def is_palindrome(input_string):
+    new_string=""
+    reverse_string=""
+    for str in input_string:
+        if str!=' ':
+            new_string +=str
+            reverse_string = str + reverse_string
+    print(new_string)
+    print(reverse_string)
+    if new_string.lower() == reverse_string.lower():
+        print('True')
+    else:
+        print('False')
+
+
+is_palindrome("Never Odd or Even")
